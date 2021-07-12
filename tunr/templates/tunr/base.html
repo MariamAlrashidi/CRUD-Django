@@ -1,0 +1,19 @@
+{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/tunr.css' %}">
+    <title>Tunr</title>
+</head>
+
+<body>
+    <h1>Tunr.</h1>
+    <nav>
+        <a href="/">Artists</a>
+        <a href="/songs">Songs</a>
+    </nav>
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>
